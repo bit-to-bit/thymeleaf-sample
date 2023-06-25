@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Current time</title>
+    <link media="all" rel="stylesheet" th:href="@{styles/time.css}" type="text/css"/>
+</head>
+<body>
+<h1><p>Current time is:</p></h1>
+<br>
+<h1>
+    <div class="time" th:text="${timeParams.get('time')}"></div>
+    <h1>
+        <br>
+        <br>
+        <img class="logo" th:src="@{images/cat.gif}"/>
+</body>
+</html>
